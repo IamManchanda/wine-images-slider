@@ -1,18 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wine Images Slider Gallery | VanillaJS</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Template | VanillaJS</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Piazzolla&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a class="logo-link">
+          <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+        </a>
 
-<body>
-  <script src="js/script.js"></script>
-</body>
+        <a class="menu">
+          <div class="menu-line menu-line-1"></div>
+          <div class="menu-line menu-line-2"></div>
+          <div class="menu-line menu-line-3"></div>
+        </a>
 
+        <nav class="nav-list">
+          <a class="nav-link">Home</a>
+          <a class="nav-link">Vineyards</a>
+          <a class="nav-link">Grapes</a>
+          <a class="nav-link">Wine</a>
+          <a class="nav-link">Contact</a>
+        </nav>
+      </div>
+
+      <button class="page-btn left-btn">
+        <img src="./assets/images/arrow.png" />
+      </button>
+      <button class="page-btn right-btn">
+        <img src="./assets/images/arrow.png" />
+      </button>
+
+      <div class="progress-wrapper">
+        <div class="progress">
+          <h2>1/5</h2>
+        </div>
+        <div class="circle-wrapper">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
+          <div class="circle circle-4"></div>
+          <div class="circle circle-5"></div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <section class="section-1">
+          <div class="section-wrapper section-1-wrapper">
+            <div class="section-1-heading-wrapper">
+              <h1 class="section-1-heading">The best wines around the world</h1>
+            </div>
+          </div>
+        </section>
+        <section class="section-2">
+          <div class="section-wrapper section-2-wrapper">
+            <div class="sale">
+              <img
+                src="./assets/images/bag.png"
+                alt="Sale Bag"
+                class="sale-bag"
+              />
+              <button class="sale-btn">order now!</button>
+            </div>
+            <img
+              src="./assets/images/wine-bottle.png"
+              alt="Wine Bottle"
+              class="wine-bottle"
+            />
+          </div>
+        </section>
+        <section class="section-3">
+          <div class="section-wrapper section-3-wrapper">
+            <h1 class="section-3-heading">the best quality</h1>
+            <img
+              src="./assets/images/frame.png"
+              alt="Grapes Frame"
+              class="frame-img"
+            />
+            <img
+              src="./assets/images/grapes.png"
+              alt="Grapes"
+              class="grapes-img"
+            />
+          </div>
+        </section>
+        <section class="section-4">
+          <div class="section-wrapper section-4-wrapper">
+            <div class="section-4-bg"></div>
+            <h1 class="section-4-heading">Newly Released Wines</h1>
+            <img
+              src="./assets/images/section-4-bg.jpg"
+              alt="New Wines"
+              class="new-wines-img"
+            />
+          </div>
+        </section>
+        <section class="section-5">
+          <div class="section-wrapper section-5-wrapper">
+            <ul class="footer-list">
+              <li>Contact</li>
+              <li>New Delhi</li>
+              <li>39, Wine Kalyan Lane</li>
+              <li>Open Daily</li>
+              <li>By appointment only</li>
+            </ul>
+            <img src="./assets/images/footer-img.png" class="footer-img" />
+            <ul class="footer-list">
+              <li>Connect</li>
+              <li>Phone: 987-654-3210</li>
+              <li>Mobile: 978-456-0123</li>
+              <li>Join our mailing list</li>
+              <li>wine@house.com</li>
+            </ul>
+            <p class="copyright">
+              Copyright &copy; CodeAndWine. All Rights Reserved
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
